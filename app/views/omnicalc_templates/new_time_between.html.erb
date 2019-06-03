@@ -1,0 +1,57 @@
+<nav>
+  <a href="/word_count/new">
+    <i class="fas fa-fw fa-calculator"></i>
+
+    Omnicalc
+  </a>
+
+  <a href="/word_count/new">
+    <i class="fas fa-fw fa-book"></i>
+
+    Word Count
+  </a>
+
+  <a href="/loan_payment/new">
+    <i class="far fa-fw fa-money-bill-alt"></i>
+
+    Loan Payment
+  </a>
+
+  <a href="/time_between/new">
+    <i class="far fa-fw fa-clock"></i>
+
+    Time Between
+  </a>
+
+  <a href="/stats/new">
+    <i class="far fa-fw fa-chart-bar"></i>
+
+    Descriptive Statistics
+  </a>
+</nav>
+
+<h1>
+  New time between calculation
+</h1>
+
+<form action="/time_between/results" method="post">
+  <div>
+    <label for="starting_time">
+      Starting Time
+    </label>
+
+    <input type="text" id="starting_time" value="01/20/2017 11:30 AM">
+  </div>
+
+  <div>
+    <label for="ending_time">
+      Ending Time
+    </label>
+
+    <input type="text" id="ending_time" value="01/20/2021 11:30 AM">
+  </div>
+
+  <button>
+    Calculate!
+  </button>
+</form>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Old Target</title>
+
+    <!-- Expand the characters we can use beyond basic ASCII 🎉 -->
+    <meta charset="utf-8">
+
+    <!-- Connect Font Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+    <!-- Embedding other CSS and JavaScript from gems and things -->
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+
+    <!-- Rails security stuff -->
+    <%= csrf_meta_tags %>
+
+    <!-- Connect our stylesheet -->
+    <link rel="stylesheet" href="/our_styles.css">
+
+    <!-- Connect Google Web Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Neucha" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- ↓↓↓ Your view templates all get plugged in below ↓↓↓ -->
+    <%= yield %>
+    <!-- ↑↑↑ Your view templates all get plugged in above ↑↑↑ -->
+
+  </body>
+</html>

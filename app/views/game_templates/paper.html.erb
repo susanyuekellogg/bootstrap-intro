@@ -1,0 +1,37 @@
+<a href="/rock">
+  <i class="far fa-hand-rock fa-fw"></i>
+
+  Play Rock
+</a>
+
+<a href="/paper">
+  <i class="far fa-hand-paper fa-fw"></i>
+
+  Play Paper
+</a>
+
+<a href="/scissors">
+  <i class="far fa-hand-scissors fa-fw"></i>
+
+  Play Scissors
+</a>
+
+<h2>We played paper!</h2>
+
+<p>
+  <i class="far fa-hand-paper fa-10x"></i>
+</p>
+
+<h2>They played <%= @comp_move %>!</h2>
+
+<p>
+  <i class="far fa-hand-<%= @comp_move %> fa-10x"></i>
+</p>
+
+<h2>
+  We <%= @outcome %>!
+</h2>
+
+<a href="/rules">
+  Rules
+</a>

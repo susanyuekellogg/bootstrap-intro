@@ -1,0 +1,123 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-warning mb-3">
+  <div class="container">
+    <a class="navbar-brand" href="/omnicalc/first_target/word_count/new">
+      <i class="fas fa-fw fa-calculator"></i>
+
+      Omnicalc
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto d-block d-lg-none">
+        <li class="nav-item">
+          <a href="/omnicalc/first_target/word_count/new" class="nav-link">
+            <i class="fas fa-fw fa-book"></i>
+
+            Word Count
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/omnicalc/first_target/loan_payment/new" class="nav-link">
+            <i class="far fa-fw fa-money-bill-alt"></i>
+
+            Loan Payment
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/omnicalc/first_target/time_between/new" class="nav-link">
+            <i class="far fa-fw fa-clock"></i>
+
+            Time Between
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/omnicalc/first_target/stats/new" class="nav-link">
+            <i class="far fa-fw fa-chart-bar"></i>
+
+            Descriptive Statistics
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 d-none d-lg-block">
+      <nav class="nav flex-column">
+        <a href="/omnicalc/first_target/word_count/new" class="nav-link btn btn-outline-primary mb-2">
+          <i class="fas fa-fw fa-book"></i>
+
+          Word Count
+        </a>
+
+        <a href="/omnicalc/first_target/loan_payment/new" class="nav-link btn btn-outline-success mb-2">
+          <i class="far fa-fw fa-money-bill-alt"></i>
+
+          Loan Payment
+        </a>
+
+        <a href="/omnicalc/first_target/time_between/new" class="nav-link btn btn-warning mb-2">
+          <i class="far fa-fw fa-clock"></i>
+
+          Time Between
+        </a>
+
+        <a href="/omnicalc/first_target/stats/new" class="nav-link btn btn-outline-info mb-2">
+          <i class="far fa-fw fa-chart-bar"></i>
+
+          Descriptive Statistics
+        </a>
+      </nav>
+    </div>  <!-- col-md-3 -->
+
+    <div class="col-lg-6">
+      <div class="card border-warning mb-3">
+        <div class="card-header">
+          New time between calculation
+        </div>
+
+        <div class="card-body">
+          <form action="/omnicalc/first_target/time_between/results" method="post">
+            <div class="form-group">
+              <label for="starting_time">
+                Starting Time
+              </label>
+
+              <div class="input-group">
+                <input type="text" class="form-control" id="starting_time" value="01/20/2017 11:30 AM">
+                <span class="input-group-addon">
+                  <i class="fa fa-calendar"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="ending_time">
+                Ending Time
+              </label>
+
+              <div class="input-group">
+                <input type="text" class="form-control" id="ending_time" value="01/20/2021 11:30 AM">
+                <span class="input-group-addon">
+                  <i class="fa fa-calendar"></i>
+                </span>
+              </div>
+            </div>
+
+            <button class="btn btn-outline-warning btn-block">
+              Calculate!
+            </button>
+          </form>
+        </div>  <!-- card-body -->
+      </div>  <!-- card -->
+    </div>  <!-- col-lg-6 -->
+  </div>  <!-- row -->
+</div> <!-- container -->>

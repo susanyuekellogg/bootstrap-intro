@@ -1,0 +1,57 @@
+<nav>
+  <a href="/word_count/new">
+    <i class="fas fa-fw fa-calculator"></i>
+
+    Omnicalc
+  </a>
+
+  <a href="/word_count/new">
+    <i class="fas fa-fw fa-book"></i>
+
+    Word Count
+  </a>
+
+  <a href="/loan_payment/new">
+    <i class="far fa-fw fa-money-bill-alt"></i>
+
+    Loan Payment
+  </a>
+
+  <a href="/time_between/new">
+    <i class="far fa-fw fa-clock"></i>
+
+    Time Between
+  </a>
+
+  <a href="/stats/new">
+    <i class="far fa-fw fa-chart-bar"></i>
+
+    Descriptive Statistics
+  </a>
+</nav>
+
+<h1>
+  New word count calculation
+</h1>
+
+<form action="/word_count/results" method="post">
+  <div>
+    <label for="user_text">
+      Text
+    </label>
+
+    <textarea rows="3" placeholder="Enter your text" id="user_text"></textarea>
+  </div>
+
+  <div>
+    <label for="user_word">
+      Special Word (optional)
+    </label>
+
+    <input type="name" id="user_word" placeholder="Enter a word to count the occurrences of">
+  </div>
+
+  <button>
+    Calculate!
+  </button>
+</form>

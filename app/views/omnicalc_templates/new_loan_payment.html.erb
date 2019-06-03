@@ -1,0 +1,65 @@
+<nav>
+  <a href="/word_count/new">
+    <i class="fas fa-fw fa-calculator"></i>
+
+    Omnicalc
+  </a>
+
+  <a href="/word_count/new">
+    <i class="fas fa-fw fa-book"></i>
+
+    Word Count
+  </a>
+
+  <a href="/loan_payment/new">
+    <i class="far fa-fw fa-money-bill-alt"></i>
+
+    Loan Payment
+  </a>
+
+  <a href="/time_between/new">
+    <i class="far fa-fw fa-clock"></i>
+
+    Time Between
+  </a>
+
+  <a href="/stats/new">
+    <i class="far fa-fw fa-chart-bar"></i>
+
+    Descriptive Statistics
+  </a>
+</nav>
+
+<h1>
+  New loan payment calculation
+</h1>
+
+<form action="/loan_payment/results" method="post">
+  <div>
+    <label for="annual_percentage_rate">
+      APR
+    </label>
+
+    <input type="number" step="any" id="annual_percentage_rate" placeholder="Enter the APR of the loan (as a percent)" value="4.5">
+  </div>
+
+  <div>
+    <label for="number_of_years">
+      Years
+    </label>
+
+    <input type="number" min="1" id="number_of_years" placeholder="Enter the number of years to repay the loan" value="30">
+  </div>
+
+  <div>
+    <label for="principal_value">
+      Principal
+    </label>
+
+    <input type="number" min="1" id="principal_value" placeholder="Enter the principal of the loan" value="50000">
+  </div>
+
+  <button>
+    Calculate!
+  </button>
+</form>
